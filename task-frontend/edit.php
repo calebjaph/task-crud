@@ -7,8 +7,8 @@
 
   // Include Files
 
-  include $_SERVER['DOCUMENT_ROOT'] . '/product-frontend/app/core/fetchAPI/fetchAPI.php';
-  include $_SERVER['DOCUMENT_ROOT'] . '/product-frontend/utils/helpers/successManage.php';
+  include $_SERVER['DOCUMENT_ROOT'] . '/app/core/fetchAPI/fetchAPI.php';
+  include $_SERVER['DOCUMENT_ROOT'] . '/utils/helpers/successManage.php';
 
   $fetchAPITask = new fetchAPI();
 
