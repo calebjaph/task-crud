@@ -83,12 +83,12 @@
     <!-- Begin page content -->
     <main class="flex-shrink-0">
       <div class="container py-5 w-75">
-        <h1>My Tasks</h1>
+        <h1>Mis tareas</h1>
         <?php
 
         if(!$fetchAllTasks) {
           echo '<div class="alert alert-primary" role="alert">
-              You dont have any tasks created yet, create your first task.
+              Si aún no tiene ninguna tarea creada, cree su primera tarea.
           </div>';
         }
 
@@ -98,7 +98,7 @@
                     <h5 class="card-header">' . $fetchAllTasks[$i]['taskName'] . '  <span class="badge text-bg-primary">' . $fetchAllTasks[$i]['tag'] . ' </span>';
 
                      switch ($fetchAllTasks[$i]['priority']) {
-                      case 'High':
+                      case 'Altos':
                           echo ' <span class="badge text-bg-danger"><i class="bi bi-flag-fill"></i> ' . $fetchAllTasks[$i]['priority'] . ' </span>';
                         break;
 
@@ -114,46 +114,45 @@
                     echo '</h5>
                     <div class="card-body">
                       <p class="card-text">' . $fetchAllTasks[$i]['description'] . '</p>
-                      <p class="card-text"><span class="badge text-bg-warning text-white"> Todo </span></p>
+                      <p class="card-text"><span class="badge text-bg-warning text-white"> Por hacer </span></p>
                        <form class="user-form" action="#" method="POST" id="registerForm">
                        <input type="hidden" name="taskId" value="' . $fetchAllTasks[$i]['id'] . '">
-                      <button type="submit" name="completeTask"  class="btn btn-success"><i class="bi bi-check"></i> Complete</button> 
-                      <a href="edit.php?id=' . $fetchAllTasks[$i]['id'] . '" class="btn btn-warning text-white"><i class="bi bi-pen"></i> Edit</a>
-                      <button type="submit" name="deleteTask" class="btn btn-danger"><i class="bi bi-trash"></i> Delete</button>
+                      <button type="submit" name="completeTask"  class="btn btn-success"><i class="bi bi-check"></i> Completar</button> 
+                      <a href="edit.php?id=' . $fetchAllTasks[$i]['id'] . '" class="btn btn-warning text-white"><i class="bi bi-pen"></i> Editar</a>
+                      <button type="submit" name="deleteTask" class="btn btn-danger"><i class="bi bi-trash"></i> Eliminar</button>
                       </form>
 
                     </div>
                   </div>';
             }else {
 
-               echo '<br><div class="card">
-                    <h5 class="card-header"><s>' . $fetchAllTasks[$i]['taskName'] . '</s>  <span class="badge text-bg-primary">' . $fetchAllTasks[$i]['tag'] . ' </span> ';
+                    echo '<br><div class="card">
+                      <h5 class="card-header"><s>' . $fetchAllTasks[$i]['taskName'] . '</s>  <span class="badge text-bg-primary">' . $fetchAllTasks[$i]['tag'] . ' </span> ';
 
 
-                switch ($fetchAllTasks[$i]['priority']) {
-                  case 'High':
-                      echo '<span class="badge text-bg-danger"><i class="bi bi-flag-fill"></i> ' . $fetchAllTasks[$i]['priority'] . ' </span>';
-                    break;
+                    switch ($fetchAllTasks[$i]['priority']) {
+                      case 'Altos':
+                          echo ' <span class="badge text-bg-danger"><i class="bi bi-flag-fill"></i> ' . $fetchAllTasks[$i]['priority'] . ' </span>';
+                        break;
 
-                  case 'Medium':
-                    echo '<span class="badge text-bg-warning text-white"><i class="bi bi-flag-fill"></i> ' . $fetchAllTasks[$i]['priority'] . ' </span>';
-                    break;
+                      case 'Medium':
+                        echo ' <span class="badge text-bg-warning text-white"><i class="bi bi-flag-fill"></i> ' . $fetchAllTasks[$i]['priority'] . ' </span>';
+                        break;
 
-                  case 'Normal':
-                    echo '<span class="badge text-bg-primary"><i class="bi bi-flag-fill"></i> ' . $fetchAllTasks[$i]['priority'] . ' </span>';
-                    break;
-                }
-
+                      case 'Normal':
+                        echo ' <span class="badge text-bg-primary"><i class="bi bi-flag-fill"></i> ' . $fetchAllTasks[$i]['priority'] . ' </span>';
+                        break;
+                      }
 
                 echo '</h5>
                       <div class="card-body">
                         <p class="card-text"><s>' . $fetchAllTasks[$i]['description'] . '</s></p>
-                        <p class="card-text"><span class="badge text-bg-success text-white"> Done </span></p>
+                        <p class="card-text"><span class="badge text-bg-success text-white"> Terminado </span></p>
                         <form class="user-form" action="#" method="POST" id="registerForm">
                         <input type="hidden" name="taskId" value="' . $fetchAllTasks[$i]['id'] . '">
-                        <button type="submit" name="completeTask"  class="btn btn-success disabled"><i class="bi bi-check"></i> Complete</button> 
-                        <a href="edit.php?id=' . $fetchAllTasks[$i]['id'] . '" class="btn btn-warning text-white"><i class="bi bi-pen"></i> Edit</a>
-                        <button type="submit" name="deleteTask" class="btn btn-danger"><i class="bi bi-trash"></i> Delete</button>
+                        <button type="submit" name="completeTask"  class="btn btn-success disabled"><i class="bi bi-check"></i> Completar</button> 
+                        <a href="edit.php?id=' . $fetchAllTasks[$i]['id'] . '" class="btn btn-warning text-white"><i class="bi bi-pen"></i> Editar</a>
+                        <button type="submit" name="deleteTask" class="btn btn-danger"><i class="bi bi-trash"></i> Eliminar</button>
                       </form>
                     </div>
                   </div>';

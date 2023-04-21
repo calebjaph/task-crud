@@ -7,10 +7,10 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.php">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="create-task.php">Create Task</a>
+              <a class="nav-link" href="create-task.php">Crear tarea</a>
             </li>
           </ul>
         </div>

@@ -77,34 +77,34 @@
     <!-- Begin page content -->
     <main class="flex-shrink-0">
       <div class="container py-5 w-75">
-       <h1>Edit Task</h1>
+       <h1>Editar tarea</h1>
        <form class="row g-3" action="#" method="POST">
           <div class="col-md-12">
-            <label for="inputEmail4" class="form-label">Task</label>
+            <label for="inputEmail4" class="form-label">Tarea</label>
             <input type="text" class="form-control" id="inputEmail4" value="<?php echo $fetchTask[0]['taskName'] ?>" name="task">
           </div>
           <div class="col-md-4">
-            <label for="inputState" class="form-label">Priority</label>
+            <label for="inputState" class="form-label">Prioridad</label>
             <select id="inputState" name="priority" class="form-select">
-              <option selected>High</option>
-              <option>Medium</option>
+              <option selected>Alto</option>
+              <option>Medio</option>
               <option>Normal</option>
             </select>
           </div>
           <div class="col-md-4">
             <label for="inputState" class="form-label">Tag</label>
             <select id="inputState" name="tag" class="form-select">
-              <option selected>Development</option>
+              <option selected>Desarrollo</option>
               <option>Personal</option>
-              <option>Work</option>
+              <option>Trabajo</option>
             </select>
           </div>
           <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+            <label for="exampleFormControlTextarea1" class="form-label">Descripción</label>
             <textarea class="form-control" name="description" value="test" id="exampleFormControlTextarea1" rows="3"><?php echo $fetchTask[0]['description'] ?></textarea>
           </div>
           <div class="col-12">
-            <button type="submit" name="editTask" class="btn btn-primary">Edit Task</button>
+            <button type="submit" name="editTask" class="btn btn-primary">Editar tarea</button>
           </div>
         </form>
       </div>
