@@ -87,7 +87,21 @@ Es importante tener en cuenta que antes de ejecutar el comando, es necesario con
 - Completar tareas ✅
 - Eliminación de tareas culminadas 🗑
 
+## Imagenes de la plataforma
 
+![alt text](https://res.cloudinary.com/static-eddukate/image/upload/v1682045763/todolist-crud/todolist-crud-1_e1iwio.png)
+
+![alt text](https://res.cloudinary.com/static-eddukate/image/upload/v1682045763/todolist-crud/todolist-crud-2_ap7aia.png)
+
+![alt text](https://res.cloudinary.com/static-eddukate/image/upload/v1682045763/todolist-crud/todolist-crud-3_xjuy9t.png)
+
+![alt text](https://res.cloudinary.com/static-eddukate/image/upload/v1682045763/todolist-crud/todolist-crud-4_yt8kqy.png)
+
+![alt text](https://res.cloudinary.com/static-eddukate/image/upload/v1682045763/todolist-crud/todolist-crud-5_bpzame.png)
+
+![alt text](https://res.cloudinary.com/static-eddukate/image/upload/v1682045763/todolist-crud/todolist-crud-6_keofnr.png)
+
+![alt text](https://res.cloudinary.com/static-eddukate/image/upload/v1682045764/todolist-crud/todolist-crud-7_fmw76s.png)
 ## Tecnologías que se usaron
 👩‍💻 PHP +8.1
 
